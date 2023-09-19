@@ -10,6 +10,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var delButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
     
+// MARK: - Добавляем счетчик (counter) и лог изменений (log)
+    var counter: Int = 0
+    var log: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,6 +33,14 @@ class ViewController: UIViewController {
         
     }
 
+// MARK: - Вывод даты и времени в лог
+    func time() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .short
+        let formattedDate = dateFormatter.string(from: Date())
+        log.append(formattedDate + ": ")
+    }
 
 }
 
