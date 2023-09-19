@@ -71,6 +71,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="bqZ-Nm-drU" id="nqs-BX-g9M"/>
+                        <outlet property="counterLabel" destination="dYB-nR-3qL" id="keF-9G-zra"/>
+                        <outlet property="delButton" destination="9qx-pe-IoX" id="PBs-2X-tzU"/>
+                        <outlet property="logTextView" destination="RIC-CH-G1t" id="e8U-NI-eLT"/>
+                        <outlet property="resetButton" destination="vNH-Xl-PGY" id="U7H-BN-tnR"/>
+                        <outlet property="textLabel" destination="aOx-dR-ng6" id="omc-JR-fQf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
