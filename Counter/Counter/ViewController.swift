@@ -50,5 +50,19 @@ class ViewController: UIViewController {
         logTextView.insertText((log.last ?? "") + "значение изменено на +1" + "\n")
     }
     
+// MARK: - Значение счетчика -1
+    @IBAction func delScore(_ sender: Any) {
+        if counter > 0 {
+            counter -= 1
+            counterLabel.text = "\(counter)"
+            time()
+            logTextView.insertText((log.last ?? "") + "значение изменено на -1" + "\n")
+        } else {
+            time()
+            logTextView.insertText((log.last ?? "") + "попытка уменьшить значение счётчика ниже 0" + "\n")
+        }
+        
+    }
+    
 }
 
