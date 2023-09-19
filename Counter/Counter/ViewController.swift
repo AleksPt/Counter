@@ -64,5 +64,13 @@ class ViewController: UIViewController {
         
     }
     
+// MARK: - Сбросить значение счетчика
+    @IBAction func resetScore(_ sender: Any) {
+        counter = 0
+        counterLabel.text = "\(counter)"
+        time()
+        logTextView.insertText((log.last ?? "") + "значение сброшено" + "\n")
+    }
+    
 }
 

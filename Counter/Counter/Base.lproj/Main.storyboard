@@ -51,6 +51,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="40"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetScore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oH5-A3-SOK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qx-pe-IoX">
                                 <rect key="frame" x="207" y="584" width="170" height="80"/>
