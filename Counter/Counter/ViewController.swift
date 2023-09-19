@@ -42,5 +42,13 @@ class ViewController: UIViewController {
         log.append(formattedDate + ": ")
     }
 
+// MARK: - Значение счетчика +1
+    @IBAction func addScore(_ sender: Any) {
+        counter += 1
+        counterLabel.text = "\(counter)"
+        time()
+        logTextView.insertText((log.last ?? "") + "значение изменено на +1" + "\n")
+    }
+    
 }
 

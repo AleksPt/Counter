@@ -39,6 +39,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addScore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ujp-A0-y11"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNH-Xl-PGY">
                                 <rect key="frame" x="16" y="685" width="361" height="80"/>
