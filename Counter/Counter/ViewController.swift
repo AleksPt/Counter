@@ -31,6 +31,9 @@ class ViewController: UIViewController {
                 self.logTextView.setContentOffset(.zero, animated: true)
                 logTextView.text = "История изменений:\n\n"
         
+        // MARK: - Блокируем лог для редактирования пользователем:
+                logTextView.isEditable = false
+        
     }
 
 // MARK: - Вывод даты и времени в лог
