@@ -9,6 +9,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var addButton: UIButton!
     @IBOutlet private weak var delButton: UIButton!
     @IBOutlet private weak var resetButton: UIButton!
+    @IBOutlet private weak var clearLogButton: UIButton!
     
     // MARK: - Добавляем счетчик (counter) и лог изменений (log)
     private var counter: Int = 0
@@ -43,6 +44,10 @@ class ViewController: UIViewController {
         dateFormatter.timeStyle = .short
         let formattedDate = dateFormatter.string(from: Date())
         log.append(formattedDate + ": ")
+        
+        // MARK: - Добавляем автоскролл в лог
+        let range = NSRange(location: logTextView.text.count - 1, length: 1)
+        logTextView.scrollRangeToVisible(range)
     }
     
     // MARK: - Значение счетчика +1
@@ -73,6 +78,11 @@ class ViewController: UIViewController {
         counterLabel.text = "\(counter)"
         time()
         logTextView.insertText((log.last ?? "") + "значение сброшено" + "\n")
+    }
+    
+    @IBAction func clearLog(_ sender: Any) {
+        logTextView.text = "История изменений:\n\n"
+        log = []
     }
     
 }
