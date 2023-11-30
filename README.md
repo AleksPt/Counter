@@ -9,4 +9,4 @@
 - [x] Фиксирует историю изменений (дата / время / последняя операция)
 - [x] При попытке изменить значение счетчика ниже 0, блокирует выполнение операции и выводит предупреждение в лог
       
-![preview](https://github.com/AleksPt/Counter/blob/main/preview.gif)
+<p style="text-align: center;">![preview](https://github.com/AleksPt/Counter/blob/main/preview.gif)</p>
